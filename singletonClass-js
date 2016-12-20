@@ -21,10 +21,10 @@ var b = new SingletonClass();
 console.log(a===b)  //prints true;
 
 
-once object is created by using above method. 
-then even if you call this function it will return the object.
+//once object is created by using above method. 
+//then even if you call this function it will return the object.
 
-for eg: 
+//for eg: 
 
 var a = new SingletonClass();
 var b = SingletonClass();
