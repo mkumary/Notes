@@ -30,3 +30,30 @@ var a = new SingletonClass();
 var b = SingletonClass();
 
 console.log(a===b)   //prints true;
+
+
+
+
+
+
+
+// Another way to create a singleton class
+
+function FirstClass(){
+FirstClass.prototype.value = 'your_value';
+
+FirstClass.prototype.methodName = function(){
+  //define your function
+}
+
+return FirstClass.prototype;
+}
+
+
+var a = new FirstClass();
+var b = new FirstClass();
+var c = FirstClass();
+
+a===b   // prints true;
+
+a===c // prints true
