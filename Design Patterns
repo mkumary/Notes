@@ -1,0 +1,35 @@
+Design patterns in javascript : 
+
+
+3 categories of it : 
+
+1) creational  (Abstract Factory, Builder, FactoryMethod, prototype, singleton)
+2) structural (Adapter, bridge, composite, Decorator,  Facade, Flyweight, proxy)
+3) Behavioural (chain of Resp, command, Intepreter, Iterator, Mediator, Memmento, Observer, state, strategy, TemplateMethod, visitor)
+
+
+Lets start with
+
+Abstract Factory : 
+
+
+
+function student(name){
+  this.name = name
+  this.say = function(){
+  return "I am Student " + name
+}
+}
+
+function StudentFactory(){
+this.create= function (name){
+return new student(name);
+}
+}
+
+var studentFactory = new StudentFactory();
+
+alert(studentFactory.create('manoj').say());
+
+
+
