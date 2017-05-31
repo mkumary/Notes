@@ -3,13 +3,13 @@
 
 evenodd caps  solution : 
 
-
+```
 var sol = "this is a test case";
 sol.split('').map(function(element, index){
 return (index%2 === 0 ? element.toUpperCase() : element.toLowerCase());
 }).join('');
 
-
+```
 
 
 
