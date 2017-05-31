@@ -1,5 +1,6 @@
 
 ```
+
 if (something) {
 	function foo() {
 		console.log( "1" );
@@ -14,6 +15,7 @@ var something = true;
 foo();    //2
 
 ```
+
 
 this will print true no matter what is the value of something because of hoisting.
 
