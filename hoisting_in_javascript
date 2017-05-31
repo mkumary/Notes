@@ -1,6 +1,5 @@
 
 ```
-
 if (something) {
 	function foo() {
 		console.log( "1" );
@@ -13,7 +12,6 @@ else {
 }
 var something = true;
 foo();    //2
-
 ```
 
 
