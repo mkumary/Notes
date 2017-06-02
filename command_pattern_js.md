@@ -14,14 +14,14 @@ mul : function(a,b){
 
 Now I want to pass commands that it can use to run a perticular funciton.
 
-for eg: 
+For eg: 
 
 ```
 calculator.run('add')
 ```
 
 
-now lets define this function:
+Now lets define this function:
 
 ```
 
@@ -31,7 +31,7 @@ calculator.run = function ( name ) {
 
 ```
 
-testing
+Testing
 
 ```
 calculator.run('add', 4, 3)   // 7
