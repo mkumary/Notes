@@ -1,4 +1,4 @@
-```` function swap(arr, start, end){
+``` function swap(arr, start, end){
 
 var p = arr[start];
 arr[start] = arr[end];
@@ -60,5 +60,6 @@ p.add(45);
 p.add(32);
 p.add(7);
 p.add(34);
-p.remove(45);````
+p.remove(45);
+```
 
