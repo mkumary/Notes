@@ -27,13 +27,14 @@ function DataStructure(){
 
                         var size = arr.length;
                         var last = arr[arr.length-1];
+                         if(last!== number)   {    // no need to swap or add again incase of last index of array.  
                                 swap(arr, hashIndex,  size-1);
-
-                                // Remove last element (This is O(1))
-                                arr.pop();
-
                                 // Update hash table for new index of last element
                                 map[last] = hashIndex;
+                        }
+		           // Remove last element (This is O(1))
+                           arr.pop();
+
                 },
                 search : function(number){
                         return map[number];
