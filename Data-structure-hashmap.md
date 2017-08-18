@@ -1,68 +1,66 @@
 ``` 
-// function to swap two numbers in a array
-function swap(arr, start, end){
-        var p = arr[start];
-        arr[start] = arr[end];
-        arr[end] = p ;
-        return arr;
-}
+
 
 
 function DataStructure(){
-var map = {};
-var arr = [];
+        var map = {};
+        var arr = [];
+        // function to swap two numbers in a array
+        var swap = function(arr, start, end){
+                var p = arr[start];
+                arr[start] = arr[end];
+                arr[end] = p ;
+                return arr;
+        }
 
-return {
-add : function(number){ 
-if(map[number] !== undefined )return;
-map[number]= arr.length;
-arr.push(number);
-},
-remove : function(number){
-var hashIndex = map[number];
-if( hashIndex === undefined )return;
+        return {
+                add : function(number){ 
+                        if(map[number] !== undefined )return;
+                        map[number]= arr.length;
+                        arr.push(number);
+                },
+                remove : function(number){
+                        var hashIndex = map[number];
+                        if( hashIndex === undefined )return;
 
-delete map[number];
+                        delete map[number];
 
-var size = arr.length;
-var last = arr[arr.length-1];
-        swap(arr, hashIndex,  size-1);
+                        var size = arr.length;
+                        var last = arr[arr.length-1];
+                                swap(arr, hashIndex,  size-1);
 
-        // Remove last element (This is O(1))
-        arr.pop();
+                                // Remove last element (This is O(1))
+                                arr.pop();
 
-        // Update hash table for new index of last element
-        map[last] = hashIndex;
+                                // Update hash table for new index of last element
+                                map[last] = hashIndex;
+                },
+                search : function(number){
+                        return map[number];
+                },
 
-
-
-},
-
-search : function(number){
-return map[number];
-},
-
-getRandom : function(){
- return arr[Math.floor(Math.random()*arr.length)];
-},
-get : function(){
-   return map;
-},
-getArr : function(){
-  return arr;
+                getRandom : function(){
+                        return arr[Math.floor(Math.random()*arr.length)];
+                },
+                get : function(){
+                   return map;
+                },
+                getArr : function(){
+                  return arr;
+                }
+        }
 }
 
-}
 
-}
-
+// test above code.
 var ds = DataStructure();
-
 ds.add(3);
 ds.add(45);
 ds.add(32);
 ds.add(7);
 ds.add(34);
 ds.remove(45);
+ds.search(7);
+ds.getRandom();
 ```
 
