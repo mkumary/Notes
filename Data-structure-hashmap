@@ -1,5 +1,4 @@
-```
-function swap(arr, start, end){
+```function swap(arr, start, end){
 
 var p = arr[start];
 arr[start] = arr[end];
@@ -35,6 +34,14 @@ var last = arr[arr.length-1];
 
 
 },
+
+search : function(number){
+return map[number];
+},
+
+getRandom : function(){
+ return arr[Math.floor(Math.random()*arr.length)];
+},
 get : function(){
    return map;
 },
@@ -51,9 +58,7 @@ var p = test();
 p.add(3);
 p.add(45);
 p.add(32);
-
-p.remove(45);
-
-
-```
+p.add(7);
+p.add(34);
+p.remove(45);```
 
