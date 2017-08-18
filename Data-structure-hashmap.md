@@ -1,11 +1,14 @@
-``` function swap(arr, start, end){
-
-var p = arr[start];
-arr[start] = arr[end];
-arr[end] = p ;
-return arr;
+``` 
+// function to swap two numbers in a array
+function swap(arr, start, end){
+        var p = arr[start];
+        arr[start] = arr[end];
+        arr[end] = p ;
+        return arr;
 }
-function test(){
+
+
+function DataStructure(){
 var map = {};
 var arr = [];
 
@@ -53,13 +56,13 @@ getArr : function(){
 
 }
 
-var p = test();
+var ds = DataStructure();
 
-p.add(3);
-p.add(45);
-p.add(32);
-p.add(7);
-p.add(34);
-p.remove(45);
+ds.add(3);
+ds.add(45);
+ds.add(32);
+ds.add(7);
+ds.add(34);
+ds.remove(45);
 ```
 
